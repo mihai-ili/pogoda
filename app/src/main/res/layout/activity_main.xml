@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            app:srcCompat="@color/design_default_color_error" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Выберите город"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="perexod"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/bor" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30sp"
+                android:layout_weight="1"
+                android:text="Борисоглебск"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="perexod2"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/l1">
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="4dp"
+                android:layout_height="80sp"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/msk" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30sp"
+                android:layout_weight="1"
+                android:text="Москва"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="perexod3"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/l2">
+
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="21dp"
+                android:layout_height="80sp"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/vrn" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30sp"
+                android:layout_weight="1"
+                android:text="Воронеж"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="perexod4"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/l3">
+
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="15dp"
+                android:layout_height="80sp"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/sar" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30sp"
+                android:layout_weight="1"
+                android:text="Саратов"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="perexod5"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/l4">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="42dp"
+                android:layout_height="80sp"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/volg" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30sp"
+                android:layout_weight="1"
+                android:text="Волгоград"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="perexod6"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/l6">
+
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="8dp"
+                android:layout_height="80sp"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/tmb" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30sp"
+                android:layout_weight="1"
+                android:text="Тамбов"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
